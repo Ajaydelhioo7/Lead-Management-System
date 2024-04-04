@@ -1,0 +1,138 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #fff3e0; /* Light orange background */
+  margin: 0;
+  padding: 10px;
+}
+
+.App,
+#crmContainer {
+  max-width: 1000px;
+  margin: auto;
+  background: #ffffff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.title {
+  color: #ef6c00; /* Darker shade of orange */
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.add-lead-section,
+.upload-section,
+.filter-section {
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.add-lead-section input,
+.add-lead-section select,
+.upload-section input,
+.upload-section select {
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ffccbc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.add-lead-section button,
+.upload-section label {
+  background-color: #ff9800;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.add-lead-section button:hover,
+.upload-section label:hover {
+  background-color: #fb8c00;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ffccbc; /* Light orange border */
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  word-break: break-word;
+}
+
+th {
+  background-color: #ffa726; /* Medium orange for headers */
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #ffecb3; /* Very light orange for alternate rows */
+}
+
+input[type="text"],
+select {
+  padding: 8px;
+  margin: 4px 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #ff9800;
+  color: white;
+  padding: 8px 15px;
+  margin: 4px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #fb8c00;
+}
+
+@media screen and (max-width: 768px) {
+  .add-lead-section input,
+  .add-lead-section select,
+  .upload-section input,
+  .upload-section select {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .add-lead-section,
+  .upload-section,
+  .filter-section {
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  table,
+  input[type="text"],
+  select,
+  button {
+    font-size: 0.9rem;
+  }
+}
