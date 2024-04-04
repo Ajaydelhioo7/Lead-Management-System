@@ -63,8 +63,10 @@ const LeadManager = () => {
 
   return (
     <div>
-      <h2>Lead Management</h2>
-      <div>
+      <h1 className="p-5 text-center text-3xl text-orange-500">
+        99Notes Lead Management
+      </h1>
+      <div className="flex h-12">
         <input
           type="text"
           value={newLead.name}
@@ -92,13 +94,21 @@ const LeadManager = () => {
           <option value="In Progress">In Progress</option>
           <option value="Rejected">Rejected</option>
         </select>
-        <button onClick={addLead}>Add New Lead</button>
       </div>
+      <button className="mt-5" onClick={addLead}>
+        Add New Lead
+      </button>
       <div>
-        <input type="file" onChange={handleFileUpload} accept=".xlsx, .xls" />
+        <input
+          type="file"
+          onChange={handleFileUpload}
+          accept=".xlsx, .xls"
+          className="mt-5"
+        />
         <select
           onChange={(e) => setCurrentFilter(e.target.value)}
           value={currentFilter}
+          className="mt-5"
         >
           <option value="All">All</option>
           <option value="Pending">Pending</option>

@@ -7,7 +7,7 @@ body {
 
 .App,
 #crmContainer {
-  max-width: 1000px;
+  /* max-width: 1200px; */
   margin: auto;
   background: #ffffff;
   padding: 20px;
